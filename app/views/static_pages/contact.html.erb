@@ -1,0 +1,35 @@
+<div class="container text-center rounded text-light bg-dark bg-gradient" style="--bs-bg-opacity: .5;">
+    <form>
+        <div class="row align-items-center">
+            <div class="col-4"></div>
+            <div class="col-4">
+                <div class="mb-3">
+                    <label for="exampleFormControlTextarea1" class="form-label">Name</label>
+                    <textarea class="form-control" id="exampleFormControlTextarea1" rows="1"></textarea>
+                </div>
+                <div class="mb-3">
+                    <label for="exampleInputEmail1" class="form-label">Email</label>
+                    <input type="email" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp">
+                <div id="emailHelp" class="form-text text-light">We'll never share your email with anyone else.</div>
+            </div>
+        </div>
+        <div class="row align-items-center">
+            <div class="col-2"></div>
+            <div class="col-8">
+                <div class="mb-3">
+                    <label for="exampleFormControlTextarea1" class="form-label">Message</label>
+                    <textarea class="form-control" id="exampleFormControlTextarea1" rows="3"></textarea>
+                </div>
+                <button type="submit" class="btn btn-success" id="button_submit">Submit</button>
+                
+                <script>
+                    document.addEventListener("DOMContentLoaded", function() {
+                        const subm = document.getElementById("button_submit");
+                        subm.addEventListener("click", () => alert(
+                        "Thank you for your message, we will contact you soon."));
+                    });
+                </script>
+            </div>
+        </form>
+    </div>
+</div>
